@@ -28,8 +28,6 @@
 // Converta para Fahrenheit e mostre no console.
 // Fórmula: F = C * 9/5 + 32
 // ------------------------------------------------------------
-let C = 10
-console.log(F = C * 9/5 + 32)
 
 
 
@@ -41,7 +39,13 @@ console.log(F = C * 9/5 + 32)
 // Dica: use o operador % (resto da divisão)
 // Se numero % 2 === 0, é par.
 // ------------------------------------------------------------
-
+let numero = 10
+if(numero % 2 === 0){
+    console.log("é par")
+}
+else{
+    console.log("é impar")
+}
 
 
 
