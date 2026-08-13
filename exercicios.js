@@ -28,6 +28,9 @@
 // Converta para Fahrenheit e mostre no console.
 // Fórmula: F = C * 9/5 + 32
 // ------------------------------------------------------------
+let C = 10
+console.log(F = C * 9/5 + 32)
+
 
 
 
