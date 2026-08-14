@@ -39,13 +39,7 @@
 // Dica: use o operador % (resto da divisão)
 // Se numero % 2 === 0, é par.
 // ------------------------------------------------------------
-let numero = 10
-if(numero % 2 === 0){
-    console.log("é par")
-}
-else{
-    console.log("é impar")
-}
+
 
 
 
@@ -55,7 +49,19 @@ else{
 // Se a média for >= 7, mostre "Aprovado".
 // Se não, mostre "Reprovado".
 // ------------------------------------------------------------
+const nota1 = 8;
+const nota2 = 7;
+const nota3 = 9;
 
+const media = (nota1 + nota2 + nota3) / 3;
+
+console.log("Média:", media);
+
+if (media >= 7) {
+  console.log("Aprovado");
+} else {
+  console.log("Reprovado");
+}
 
 
 
