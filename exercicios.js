@@ -47,23 +47,7 @@
 // Crie 3 variáveis com notas (de 0 a 10).
 // Calcule a média e mostre no console.
 // Se a média for >= 7, mostre "Aprovado".
-// Se não, mostre "Reprovado".
-// ------------------------------------------------------------
-const nota1 = 8;
-const nota2 = 7;
-const nota3 = 9;
-
-const media = (nota1 + nota2 + nota3) / 3;
-
-console.log("Média:", media);
-
-if (media >= 7) {
-  console.log("Aprovado");
-} else {
-  console.log("Reprovado");
-}
-
-
+// Se não, mostre "Reprovado".// ----------------------------------------------------------
 
 // ============================================================
 //  BLOCO 2 - CONDICIONAIS (if/else, switch)
@@ -75,7 +59,13 @@ if (media >= 7) {
 // Se for >= 18, mostre "Maior de idade".
 // Se não, mostre "Menor de idade".
 // ------------------------------------------------------------
+let idade = 18
 
+if (idade < 18) {
+    console.log("Menor de idade")
+} else {
+    console.log("Maior de idade")
+}
 
 
 
