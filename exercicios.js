@@ -47,7 +47,11 @@
 // Crie 3 variáveis com notas (de 0 a 10).
 // Calcule a média e mostre no console.
 // Se a média for >= 7, mostre "Aprovado".
-// Se não, mostre "Reprovado".// ----------------------------------------------------------
+// Se não, mostre "Reprovado".
+// ----------------------------------------------------------
+
+
+
 
 // ============================================================
 //  BLOCO 2 - CONDICIONAIS (if/else, switch)
@@ -59,13 +63,6 @@
 // Se for >= 18, mostre "Maior de idade".
 // Se não, mostre "Menor de idade".
 // ------------------------------------------------------------
-let idade = 18
-
-if (idade < 18) {
-    console.log("Menor de idade")
-} else {
-    console.log("Maior de idade")
-}
 
 
 
@@ -78,8 +75,22 @@ if (idade < 18) {
 //   25 até 29.9    = "Sobrepeso"
 //   30 ou mais     = "Obesidade"
 // ------------------------------------------------------------
+let peso = 50;
+let altura = 1.53
 
+let imc = peso / (altura * altura)
 
+console.log("seu imc e: " + imc.toFixed(2));
+
+if (imc < 18.5){
+    console.log("abaixo do peso");
+}else if (imc >= 18.5 && imc <= 24.9){
+    console.log("peso normal");
+}else if (imc >=  25 && imc <= 29.9){
+    console.log("sobrepeso");
+}else{
+    console.log("obesidade");
+}
 
 
 // EXERCÍCIO 7 - Pedra, papel e tesoura
