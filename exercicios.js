@@ -29,7 +29,8 @@
 // Fórmula: F = C * 9/5 + 32
 // ------------------------------------------------------------
 
-
+let C = 10
+console.log(F = C * 9/5 + 32)
 
 
 
@@ -40,7 +41,13 @@
 // Se numero % 2 === 0, é par.
 // ------------------------------------------------------------
 
-
+let numero = 10
+if(numero % 2 === 0){
+    console.log("é par")
+}
+else{
+    console.log("é impar")
+}
 
 
 // EXERCÍCIO 4 - Média de notas
@@ -50,7 +57,19 @@
 // Se não, mostre "Reprovado".
 // ----------------------------------------------------------
 
+const nota1 = 8;
+const nota2 = 7;
+const nota3 = 9;
 
+const media = (nota1 + nota2 + nota3) / 3;
+
+console.log("Média:", media);
+
+if (media >= 7) {
+  console.log("Aprovado");
+} else {
+  console.log("Reprovado");
+}
 
 
 // ============================================================
@@ -64,6 +83,13 @@
 // Se não, mostre "Menor de idade".
 // ------------------------------------------------------------
 
+let idade = 18
+
+if (idade < 18) {
+    console.log("Menor de idade")
+} else {
+    console.log("Maior de idade")
+}
 
 
 // EXERCÍCIO 6 - Calculadora de IMC
@@ -102,7 +128,30 @@ if (imc < 18.5){
 // Compare as jogadas e mostre quem ganhou.
 // ------------------------------------------------------------
 
+let minhaJogada = "pedra"; 
+let opcoes = ["pedra", "papel", "tesoura"];
+let computador = opcoes[Math.floor(Math.random() * 3)];
 
+
+console.log("Você: " + minhaJogada);
+console.log("Computador: " + computador);
+
+
+if (minhaJogada === computador) {
+    console.log("Deu empate!");
+} 
+else if (minhaJogada === "pedra" && computador === "tesoura") {
+    console.log("Você ganhou! Pedra esmaga tesoura.");
+} 
+else if (minhaJogada === "papel" && computador === "pedra") {
+    console.log("Você ganhou! Papel embrulha pedra.");
+} 
+else if (minhaJogada === "tesoura" && computador === "papel") {
+    console.log("Você ganhou! Tesoura corta papel.");
+} 
+else {
+    console.log("O computador ganhou!");
+}
 
 
 // EXERCÍCIO 8 - Sistema de notas
@@ -115,7 +164,26 @@ if (imc < 18.5){
 //   2, 1, 0  = "F"
 // ------------------------------------------------------------
 
+let nota = 8; 
 
+if (nota === 10 || nota === 9) {
+    console.log("Conceito: A");
+} 
+else if (nota === 8 || nota === 7) {
+    console.log("Conceito: B");
+} 
+else if (nota === 6 || nota === 5) {
+    console.log("Conceito: C");
+} 
+else if (nota === 4 || nota === 3) {
+    console.log("Conceito: D");
+} 
+else if (nota === 2 || nota === 1 || nota === 0) {
+    console.log("Conceito: F");
+} 
+else {
+    console.log("Nota inválida! Digite um valor entre 0 e 10.");
+}
 
 
 // ============================================================
@@ -132,8 +200,15 @@ if (imc < 18.5){
 //   ... até "5 x 10 = 50"
 // ------------------------------------------------------------
 
+let Numero = 5; 
+
+console.log(`Tabuada do ${numero}:`);
 
 
+for (let i = 1; i <= 10; i++) {
+    let resultado = numero * i;
+    console.log(`${numero} x ${i} =${resultado}`);
+}
 
 // EXERCÍCIO 10 - Contagem regressiva
 // Use um for para contar de 10 até 0.
@@ -141,7 +216,11 @@ if (imc < 18.5){
 // No final, mostre "Feliz Ano Novo!" (ou qualquer mensagem).
 // ------------------------------------------------------------
 
+for (let i = 10; i >= 0; i--) {
+    console.log(i);
+}
 
+console.log("Feliz Ano Novo!");
 
 
 // EXERCÍCIO 11 - Somar números
